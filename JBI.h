@@ -23,13 +23,13 @@ string reverb_s(string input) {
 
 class link {
     private:
-    string LINK;
+    string URL;
     public:
-    link(string _LINK) {
-        LINK = _LINK;
+    link(string _URL) {
+        URL = _URL;
     }
     void open() {
-        ShellExecuteA(0, NULL, LINK.c_str(), 0, 0, SW_HIDE);
+        ShellExecuteA(0, NULL, URL.c_str(), 0, 0, SW_HIDE);
     }
 };
 
